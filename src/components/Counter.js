@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 export class Counter extends React.Component {
 
   constructor(props){
