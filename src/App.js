@@ -7,11 +7,11 @@ import { Player } from './components/Player.js';
 class App extends React.Component {
   state = {
     players : [
-      {id : 1, name : "MSH",},
-      {id : 2,name : "A",},
-      {id : 3,name : "B",},
-      {id : 4,name : "C",},
-      {id : 5, name : "D",},
+      {id : 1, name : "MSH", score: 0},
+      {id : 2,name : "A",score: 0},
+      {id : 3,name : "B",score: 0},
+      {id : 4,name : "C",score: 0},
+      {id : 5, name : "D",score: 0},
     ]
   }
 
@@ -32,6 +32,7 @@ class App extends React.Component {
               key={player.id.toString()}
               handleRemovePlayer={this.handleRemovePlayer}
               id={player.id}
+              score={player.score}
             />
           ))
         }
